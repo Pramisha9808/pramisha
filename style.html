@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- JS can manipulate Content-->
+    <h1 class="fe" ondblclick="this.innerHTML='events test' ">HTML</h1>
+
+    <!-- JS can manipulate Attribute -->
+    <h1 class="fe" ondblclick="this.innerHTML='events test' ">HTML</h1>
+
+
+    <!-- JS can manipulate Style -->
+    <h1 id="first" onclick="ChangeColor()">JavaScript </h1>
+
+     <!-- JS can manipulate structure (DOM) -->
+     <div class="myDiv" onclick="changeS()">
+        <p> Paragraph Text</p>
+
+    
+    </div>
+
+    
+    <!-- <h1 class="fe">CSS</h1>
+    <h1 id="first">JavaScript</h1> -->
+
+    <input type="text" id="user_num" name="user_input">
+    <input type="button" value="show" onclick="showDay()">
+
+
+    <script>
+        function ChangeColor()
+        
+        [
+        document.getElementById("first").style.color ='red';
+        document.getElementById("first").style.fontFamily ="poppins";
+        ]
+
+        function changeSt()
+        {
+            document.getElementById("myDiv").innerHTML= 
+            <div class = "divClass"><h1>HTML</h1><p> paragraph</p>
+
+    
+</div>
+            
+        }
+
+
+
+
+
+
+        document.write("JS Print");
+        alert("JS alert Box");
+
+        // selectors
+        document.getElementById("first");
+        document.getElementByClassNmae("fe")[1].innerHTML = 'Test';
+        document.getElementByTagName("h1")[2].innerHTML = "Tag Selector";
+        document.getElementByName("user_input")[0].value = 100;
+        
+
+        // document.querySelector('#first').innerHTML = 'QS Test';
+        // document.querySelectorALL('.fe')[0].innerHTML = 'QS Test';
+
+        
+        /*
+        events:
+
+        click scroll mouseover mouseout dblclick
+        keypress keyup keydown
+        focus change select check
+
+
+        */
+
+
+    </script>
+
+</body>
+</html>

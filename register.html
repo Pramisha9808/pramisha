@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/musi.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+
+            <div class="logo">
+            <img src="../img/my pic.jpg" alt="Logo">
+            </div>
+            <div class="title">
+                <h1>Online Shoping Nepal</h1>
+                <h4 >Start shopping online</h4>   
+                
+            </div>
+            <div class="social">
+                <h3> F0LLOW US</h3>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon> </a>
+                <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+               
+            
+            </div>
+        </div>
+    
+        <div id="nav">
+            <ul id="main-nav"> 
+                <!-- hyperlinks in html
+               Absolute URL
+               Relative URL
+               In page link
+            ../index.html to get out from the folder 
+            display inline block to take inline block to take i and b tags
+            -->
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <ul id="user-nav">
+                 <li><a href="#">User &nabla;</a>
+                <ul>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+                </li> 
+                 
+            </ul>
+        </div>
+        <div id="reg-form">
+            <form method="get" action=""  enctype="multipart/form-data">
+               <div class="form-div">
+                <label for="Name"> Full Name</label>
+                <input type="text" name="full name" required>
+            </div>
+            <div class="form-div">
+                <label for="Address">Address</label>
+                <input type="text">
+                </div>
+
+                <div class="form-div">
+                    <label for="">DOB</label>
+                    <input type="date">
+                    </div>
+
+                    
+                <div class="form-div">
+                    <label for=" ">Gender</label>
+                    <input type="radio" name="gender" value="male" checked>
+                    <label for=" ">Male</label>
+                    <input type="radio">
+                    <label for=" ">Female</label>
+                    <input type="radio">
+                    <label for=" ">Others</label>
+
+                    </div>
+
+                    <div class="form-div">
+                        <label for="">Interest</label>
+                        <input type="checkbox" name="interest"value="AI">
+                        <label for="AI">Artificial intelligence</label>
+                        <input type="checkbox" name="interest"value="Security">
+                        <label for="Security">Security intelligence</label>
+                        <input type="checkbox" name="interest"value="management">
+                        <label for="management">Manager</label>
+                        
+                        
+                    </div>
+                    <div class="form-div">
+                        <label for="">Province</label>
+                        <select name="Province" id="" required>
+                        <option value="koshi">koshi</option>
+                        <option value="madesh">madesh</option>
+                        <option value="bagmati" selected>bagmati</option>
+                        <option value="gandaki">gandaki</option>
+                        <option value="lumbini">lumbini</option>
+                        <option value="karnali">karnali</option>
+                        <option value="sudur paschim">sudur paschim</option>
+                    </select>
+                    </div>
+
+                     <div class="form-div">
+                     <label for="">Mobile</label>
+                     <input type="number" name="mobile">
+                     </div>
+
+                    <div class="form-div">
+                        <label for="">Bio</label>
+                        <textarea name="Bio" id="" cols="30" rows="10">Previous Data</textarea>
+                    </div>
+                    <div class="form-div">
+                        <label for="">email</label>
+                        <input type="email" name="email">
+                        </div>
+
+                        <div class="form-div">
+                            <label for="">password</label>
+                            <input type="password" name="password">
+                        </div>
+                           <div class="form-div">
+                            <label for="">Range</label>
+                            <input type="range" name="range" max="5" min="1">
+                           </div>
+
+                           <div class="form-div">
+                            <label for="">Fav color</label>
+                            <input type="color" name="color" >
+                           </div>
+
+                           <div class="form-div">
+                            <label for="">image</label>
+                            <input type="file" name="image" >
+                           </div>
+
+                            <div class="form-div">
+                                <input type="button" value="Click">
+                                <input type="reset">
+                                <input type="submit" value="register">
+                            </div>
+                            <div class="form-div">
+                                <button type="button">Click</button>
+                                <button type="reset">Reset</button>
+                                <button type="submit">Register</button>
+                            </div>
+
+            </form>
+        </div>
+        
+        <div id="footer"></div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

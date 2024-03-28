@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv" onclick="changeDiv()"
+    style="height: 100px; width: 100px; background: blue">
+    
+    <img src="../img/logo.jpg" alt="image" Id="myImg"
+    style="height:100px;width: 100px;"
+    onmouseover= "changeImage()" onmouseout="changeImageFirst()">
+    </div>
+
+    <div>
+        <input type="text"
+        onkeyup="document.getElementById('nameOut').innerHTML=this.value;">
+        <br>
+        <label id="nameOut"></label>
+        <br>
+
+        <input type="range" min="-10" max="10"
+        onchange="document.getElementById('rangeOut').innerHTML=this.value;">
+        <br>
+        <label id="rangeOut"></label>
+    </div>
+
+    <script>
+        // for change the previous work
+        function changeDiv()
+        {
+        document.getElementById('myDiv').style.background = 'green';
+        document.getElementById('myDiv').style.height = '200px';
+        document.getElementById('myDiv').style.width = '200px';
+        }
+    
+        function changeImage()
+        {
+        document.getElementById('myImg').style.height = '200px';
+        document.getElementById('myImg').style.width = '200px';
+        }
+    
+        function changeImageFirst()
+        {
+        document.getElementById('myImg').style.height = '100px';
+        document.getElementById('myImg').style.width = '100px';
+        }
+    </script>
+</body>
+</html>

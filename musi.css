@@ -1,0 +1,224 @@
+/* 
+selectors:
+tag
+ID 
+Descedant
+Child
+Universal
+Pseudo Selector
+i)Element: first-letter, first-line, before, after
+ii)Class: hover, active, link, visited
+multiple element selector
+Attribute selectors
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+#main{
+    width: 1200px;   
+    background-color: antiquewhite;
+    margin: 0 auto;
+    float: left;
+}
+
+#header{
+    height: 100px;
+    width: 1200px;
+    background-color: aqua;
+    float: left;
+    
+}
+.logo{
+    float: left;
+    width: 300px;
+    height: 90px;
+    
+
+}
+.logo img{
+    height: 100px;
+    width: 40%;
+}
+.title{
+    float: left;
+    height: 100px;
+    width: 650px;
+    /* background-color: blueviolet; */
+}
+.title h1{
+    /* float: left; */
+    align-items: center; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.title h4{
+    float: left;
+    align-items: center;
+    text-indent: 200px;
+    font-family: cursive;
+    
+}
+.social{
+    float: right;
+    /* background-color: olivedrab; */
+    width:250px;
+    height: 100px;
+    
+}
+#nav{
+     /* height: 50px;  */
+    width: 1200px;
+    background-color:rgb(175, 78, 188);
+    float: left;
+}
+#nav ul li{
+    float: left;
+    list-style-type: none;
+    margin: 17px 20px;
+}
+#nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+#nav ul li ul{
+    border-radius: 0 5px 0 5px;
+    background-color: rgb(61, 144, 204);
+    display: none;
+}
+#nav ul li ul li{
+    float: none;
+    /* background-color: #5425fe; */
+    margin: 5px;
+    padding: 0 5px 5px 5px;
+    border-bottom: 1px dotted silver;
+    /* border-radius: 50%; */
+}
+#nav ul li:hover ul{
+    display: block;
+}
+#main-nav{
+    float: left;
+}
+#user-nav{
+    float: right;
+}
+
+#slider {
+    min-height: 300px;
+    width: 1200px;
+    background-color: rgb(100, 179, 248);
+    float: left;
+}
+
+#slider img {
+    height: 290px;
+    width: 1190px;
+    border: 5px solid  rgb(100, 179, 248);
+    /* z-index: -2;
+    position: relative; */
+}
+
+#slider h1 {
+    position: sticky;
+    top: 0;
+    margin: -1350px auto 0 auto;
+    color: azure;
+    background-color: aquamarine;
+    text-align: center;
+    margin: auto;
+    opacity: 0.5;
+     /* z-index: -3;  */
+
+}
+
+/* #tbl{
+    height: 200px;
+    width: 200px;
+}
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: auto;
+} */
+
+#display{
+    /* height: 300px; */
+    width: 1200px;
+    background-color:burlywood;
+    float: left;
+}
+h1{
+    text-align: center;
+    /* background-color: paleturquoise; */
+    width:500px;
+    margin: 5px auto;
+}
+.product{
+    width: 200px;
+    height: 220px;
+    margin:25px 0 25px 75px;
+    /* background-color: plum; */
+    float: left;
+}
+.product img{
+    width: 100px;
+    height: 120px;
+    margin:25px 0 25px 75px;
+    /* background-color: plum; */
+    float: left;
+}
+
+
+#testimonial{
+    height: 300px;
+    width: 1200px;
+    background-color:palevioletred;
+    float: left;
+}
+.musi{
+    width: 400px;
+    height: 200px;
+    margin: 25px 75px 25px 75px;
+    float: left;
+    background-color: #5425fe;
+}
+#footer{
+    height: 200px;
+    width: 1200px;
+    background-color: blueviolet;
+    float: left;
+}
+#reg-form form {
+    margin: 40px;
+}
+#reg-form form .form-div{
+    margin: 5px 0;
+}
+#reg-form form .form-div label{
+    width: 100px;
+    /* display: inline-block; */
+    float: left;
+
+}
+
+#reg-form form .form-div input,select, textarea{
+    background-color: grey;
+    width: 200px;
+}
+#reg-form form .form-div input [type="radio"],
+#reg-form form .form-div input [type="checkbox"],
+#reg-form form .form-div input [type="button"]
+
+{
+  width: auto;
+}
+
+#reg-form form .form-div input[tpye="password"]
+{
+    background-color: #2b5489;
+}

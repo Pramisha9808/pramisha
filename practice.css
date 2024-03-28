@@ -1,0 +1,66 @@
+#main{
+    width: 800px;  
+    height: 800px;
+    background-color:olive;
+    margin: 0 auto;
+    float: left;
+    
+}
+
+#header{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    color: black;
+    text-align:right;
+    
+}
+#nav{
+    height: 200px;
+    width: 50px;
+    background-color:yellowgreen;
+}
+#slider{
+    height: 400px;
+    width: 500px;
+    background-color:orchid;
+    float: left;
+}
+#display{
+    height: 300px; 
+    width: 500px;
+    background-color:burlywood;
+    float: left;
+}
+h1{
+    text-align: center;
+    background-color: paleturquoise;
+    width:500px;
+    margin: 5px auto;
+}
+.product{
+    width: 200px;
+    height: 220px;
+    margin:25px 0 25px 75px;
+    background-color: plum;
+    float: left;
+}
+#testimonial{
+    height: 300px;
+    width: 500px;
+    background-color:palevioletred;
+    float: left;
+}
+.musi{
+    width: 400px;
+    height: 250px;
+    margin: 25px 75px 25px 75px;
+    float: left;
+    background-color: #5425fe;
+}
+#footer{
+    height: 200px;
+    width: 500px;
+    background-color: blueviolet;
+    float: left;
+}

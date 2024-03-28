@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style> 
+  #main {
+    background-color: rgb(87, 53, 118);
+    height: 200px;
+    width: 200px;
+    position: relative;
+  }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <h1>JavaScript</h1>
+   
+  </div>
+  <input type="button" value="show" >
+  <input type="button" value="animate" >
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script>
+    // document.getElementById('main').innerText = 'hello <b>JS<b>';
+    //   document.getElementById('main').align= 'center';
+    //     document.getElementById('main').style.background = 'pink';
+    //       document.getElementById('main').innerHTML = 'hello <b>JS<b>';
+    //         document.getElementById('main').setAttribute = 'MyDiv';
+
+
+    //         $('#main').text('HELLO <b> JS <b>');
+    //         $('#main').attr('align','center');
+    //         $('#main').css('background','yellow');
+    //         $('#main').html('HELLO <b> JS <b>');
+
+
+
+
+    $(document).ready(function(){
+      // alert('test');
+      // $('#input[type="test"]')
+      $('h1').click(function(){
+        // $(this).hide();
+        // $(this).fadeOut(1000);
+        // $('#main').slideUp(2000);
+        $('#main').fadeOut(1000, function(){
+          $('#main').slideUp(2000);
+        });
+      });
+
+      $('input[type="button"]:even').click(function(){
+
+      
+      // $('#main').click(function(){
+        // $('#main h1').show(1000);
+        // $('#main').slideDown(1000);
+        // $('#main h1').fadeIn(2000);
+        $('#main').slideToggle(1000);
+      });
+
+      $('input[type="button"]:odd').click(function(){
+        $('#main').animate({left:'100px'}, 1000);
+        $('#main').animate({top: '100px'}, 1000);
+      });
+ });
+    
+
+  </script>
+</body>
+</html>
